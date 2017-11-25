@@ -7,7 +7,7 @@ API_KEY = os.environ['TMDB_API_KEY']
 class APIKeyMissingError(Exception):
     pass
 
-if TMDB_API_KEY is None:
+if API_KEY is None:
     raise APIKeyMissingError(
         "All methods require an API key. See "
         "https://developers.themoviedb.org/3/getting-started/introduction "
